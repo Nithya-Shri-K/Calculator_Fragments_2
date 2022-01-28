@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/text_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Reset"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/layout_buttons"
+        >
+        <Button
+            android:id="@+id/add"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/add"
+            />
+        <Button
+            android:id="@+id/subtract"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/subtract"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            />
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/multiply"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            />
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/divide"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
